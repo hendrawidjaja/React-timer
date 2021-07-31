@@ -1,4 +1,4 @@
-# Getting Started with Stopwatch
+# Getting Started with React Timer
 
 ```
    npm i
