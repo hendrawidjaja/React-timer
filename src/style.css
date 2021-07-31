@@ -1,0 +1,50 @@
+@keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container,
+.wrapper-digits,
+.wrapper-btn {
+  display: grid;
+  position: relative;
+  place-content: center;
+}
+
+.container {
+  grid-template-rows: 8% 4%;
+  min-height: 100vh;
+}
+
+.wrapper-digits {
+  font-size: 2rem;
+  grid-template-columns: 42px 8px 42px 8px 42px;
+  text-align: center;
+}
+
+.wrapper-two-buttons {
+  gap: 1.2rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.btn {
+  border-radius: 3px;
+  border: 1px solid #808080;
+  font-size: 1rem;
+  min-width: 3.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn.reveal {
+  animation: reveal 2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.btn:hover {
+  background: #bbbbbb;
+  color: #808080;
+  cursor: pointer;
+}
